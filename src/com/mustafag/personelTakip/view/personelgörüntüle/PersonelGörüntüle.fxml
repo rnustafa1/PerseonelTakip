@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mustafag.personelTakip.view.personelgörüntüle.PersonelGörüntüleController">
+   <children>
+      <TableView fx:id="table" layoutX="3.0" layoutY="4.0" prefHeight="392.0" prefWidth="753.0">
+        <columns>
+          <TableColumn fx:id="tvTC" prefWidth="157.0" text="TC" />
+          <TableColumn fx:id="tvisim" prefWidth="177.0" text="Personel Adı" />
+            <TableColumn fx:id="tvyas" minWidth="8.0" prefWidth="168.0" text="Yaş" />
+            <TableColumn fx:id="tvTelefon" minWidth="8.0" prefWidth="245.0" text="Telefon No" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

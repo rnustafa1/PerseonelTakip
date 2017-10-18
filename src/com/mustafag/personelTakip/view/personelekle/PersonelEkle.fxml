@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="529.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mustafag.personelTakip.view.personelekle.PersonelEkleController">
+   <children>
+      <Label layoutX="134.0" layoutY="34.0" text="TC:" />
+      <Label layoutX="131.0" layoutY="87.0" text="Adı:" />
+      <Label layoutX="133.0" layoutY="216.0" text="Yaş" />
+      <Label layoutX="131.0" layoutY="153.0" text="Soyadı:" />
+      <Label layoutX="131.0" layoutY="275.0" text="Telefon:" />
+      <TextField fx:id="tfTC" layoutX="274.0" layoutY="28.0" />
+      <TextField fx:id="tfAdı" layoutX="274.0" layoutY="87.0" />
+      <TextField fx:id="tfSoyadı" layoutX="274.0" layoutY="147.0" />
+      <TextField fx:id="tfYaş" layoutX="274.0" layoutY="210.0" />
+      <TextField fx:id="tfTelefon" layoutX="274.0" layoutY="269.0" />
+      <TextField fx:id="tfKulAdı" layoutX="274.0" layoutY="330.0" />
+      <TextField fx:id="tfSifre" layoutX="274.0" layoutY="379.0" />
+      <Button layoutX="418.0" layoutY="459.0" mnemonicParsing="false" onAction="#kaydet" text="KAYDET" />
+      <Label layoutX="134.0" layoutY="336.0" text="Kullanıcı Adi:" />
+      <Label layoutX="131.0" layoutY="385.0" text="Şifre:" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="S_RESIZE" />
+   </cursor>
+</AnchorPane>
