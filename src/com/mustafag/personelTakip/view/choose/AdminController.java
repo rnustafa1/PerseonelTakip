@@ -34,4 +34,29 @@ public class AdminController {
         stage.setScene(new Scene(root));
         stage.show();
     }
+
+    public void personelsil(ActionEvent actionEvent) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../personelsil/PersonelSil.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage stage=new Stage();
+        stage.setTitle("Personel Sil");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+    public void personelduzenle(ActionEvent actionEvent) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../personelduzenle/PersonelDuzenle.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage stage=new Stage();
+        stage.setTitle("Personel Düzenle");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
 }

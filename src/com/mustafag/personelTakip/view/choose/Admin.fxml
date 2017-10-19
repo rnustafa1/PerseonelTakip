@@ -7,6 +7,8 @@
     <children>
         <Button layoutX="80.0" layoutY="112.0" mnemonicParsing="false" onAction="#personelGörüntüle" prefHeight="102.0" prefWidth="177.0" text="Personel Görüntüle" />
         <Button layoutX="320.0" layoutY="112.0" mnemonicParsing="false" onAction="#personelekle" prefHeight="102.0" prefWidth="177.0" text="Personel Ekle" />
+      <Button layoutX="80.0" layoutY="243.0" mnemonicParsing="false" onAction="#personelsil" prefHeight="102.0" prefWidth="177.0" text="Personel Sil" />
+      <Button layoutX="328.0" layoutY="243.0" mnemonicParsing="false" onAction="#personelduzenle" prefHeight="102.0" prefWidth="177.0" text="Personel Düzenle" />
     </children>
 
 </AnchorPane>
