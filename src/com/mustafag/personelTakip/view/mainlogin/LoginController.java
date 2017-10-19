@@ -35,7 +35,7 @@ public class LoginController {
             stage.setTitle("Sayın " + tfKulAdı.getText().toUpperCase() + " P.Takip sisteme hoşgeldiniz");
             stage.setScene(new Scene(root));
             stage.show();
-        }if (kullaniciEntity.getKullaniciAdi().equals("user") && kullaniciEntity.getId() !=null){
+        }else if (kullaniciEntity.getKullaniciAdi() !="admin" && kullaniciEntity.getId() !=null){
 
             Parent root = null;
             try {
