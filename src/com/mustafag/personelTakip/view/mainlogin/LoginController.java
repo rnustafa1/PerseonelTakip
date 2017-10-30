@@ -23,7 +23,7 @@ public class LoginController {
     public void giris(ActionEvent actionEvent) {
         PersonelDAO dao = new PersonelDAO();
         KullaniciEntity kullaniciEntity = dao.getKullanici(tfKulAdı.getText(), tfSifre.getText());
-        if (kullaniciEntity.getKullaniciAdi().equals("admin") && kullaniciEntity.getSifre().equals("admin")) {
+        if (tfKulAdı.getText().equals("admin".toLowerCase()) && tfSifre.getText().equals("admin")) {
             Parent root = null;
             try {
                 root = FXMLLoader.load(getClass().getResource("../choose/admin.fxml"));
@@ -35,7 +35,8 @@ public class LoginController {
             stage.setTitle("Sayın " + tfKulAdı.getText().toUpperCase() + " P.Takip sisteme hoşgeldiniz");
             stage.setScene(new Scene(root));
             stage.show();
-        }else if (kullaniciEntity.getKullaniciAdi() !="admin" && kullaniciEntity.getId() !=null){
+        }
+        else if (tfKulAdı.getText() !="admin" && kullaniciEntity.getId() !=null){
 
             Parent root = null;
             try {

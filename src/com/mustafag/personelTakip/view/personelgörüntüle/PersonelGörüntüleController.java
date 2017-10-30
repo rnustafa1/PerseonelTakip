@@ -17,8 +17,8 @@ public class PersonelGörüntüleController {
     public TableColumn tvTelefon;
     public TableView table;
     public TableColumn tvyas;
-    ObservableList<PersonelEntity> list = FXCollections.observableArrayList();
 
+    ObservableList<PersonelEntity> list = FXCollections.observableArrayList();
     public PersonelGörüntüleController(){
         PersonelDAO dao = new PersonelDAO();
         list = dao.getKullaniciList();
